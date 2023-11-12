@@ -50,7 +50,7 @@ class Blockchain:
     #     self.difficulty = 1 if self.difficulty <= 0 else self.difficulty
 
     # # I found it hard to figure out when to increase/decrease difficulty
-    # # so I just left it as it is
+    # # so I just disabled it
 
     def __str__(self) -> str:
         res = {

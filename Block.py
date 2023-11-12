@@ -6,7 +6,7 @@ class PoW:
     def validate(prev_hash:str, nonce:str, difficulty:int):
         value = hashlib.sha256((prev_hash + nonce).encode()).hexdigest()
         return value.startswith('0' * difficulty)
-        # Validating with leading zero, not a good algorithm tbh
+        # Leading zero
 
 
 class Block:

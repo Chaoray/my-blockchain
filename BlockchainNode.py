@@ -18,6 +18,7 @@ class BlockchainNode(object):
 
 
     def run(self, host, port):
+        print(f'Running on {host}:{port}')
         self.app.run(host, port)
     
     def get_chain(self):
